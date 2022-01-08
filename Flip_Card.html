@@ -1,0 +1,95 @@
+<html>
+    <head><title>Flip Card Animation</title></head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        body{
+            background-color: gray;
+            color: white;
+            
+        }
+
+        .box{
+            height:300px;
+            width:300px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+
+        .box .box-content:hover{
+            transform:rotateY(180deg);
+
+        }
+
+        .box-content{
+            width:250px;
+            height:250px;
+            transform-style:preserve-3d;
+            transition:transform 0.9s;
+        }
+
+        #box-front{
+            border-radius:30px;
+
+            width:250px;
+            height:250px;
+            background:blue;
+            padding:30px;
+            position:absolute;
+            
+        }
+        #box-back{
+            border-radius:30px;
+
+            transform:rotateY(180deg);
+            width:250px;
+            height:250px;
+            background:rgb(18, 190, 12);
+            padding:30px;
+
+        }
+
+        #box-front p{
+            font-size:50px;
+            text-align:center;
+        }
+
+        
+        #box-front h3{
+            margin-top:50px;
+            font-size:30px;
+            text-align:center;
+        }
+
+        
+        #box-back p{
+            /* margin-top:20px; */
+            font-size:30px;
+            text-align:center;
+        }
+        
+    </style>
+
+<body>
+    <div class="box">
+    <div class="box-content">
+
+            <div id="box-front">
+                <p>Tenali Ramkrishna</p>
+                <h3>About Us </h3>
+                
+            </div>
+            <div id="box-back">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure saepe omnis eaque sunt, expedita minima!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
